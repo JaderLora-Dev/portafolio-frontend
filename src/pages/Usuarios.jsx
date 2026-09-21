@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../Estilos/Usuarios.css";
 import { eliminarUsuario, obtenerUsuarios } from "../services/usuarios.service";
-import UsuariosTable from "../components/usuariosTable.jsx";
+import UsuariosTable from "../components/UsuariosTable.jsx";
 import Modal from "../components/Modal";
 import UsuariosForm from "../components/UsuariosForm";
 import { LuPlus } from "react-icons/lu";
