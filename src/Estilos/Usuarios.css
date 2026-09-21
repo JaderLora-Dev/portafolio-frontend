@@ -1,0 +1,62 @@
+.container-usuarios {
+    width: 100%;
+    margin: auto;
+    padding:  5px;
+    box-sizing: border-box;    
+}
+
+.header-usuario {
+    margin: 7px ;
+    border:  2px solid #0901e656;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+     background: rgba(0, 0, 0, 0.325);
+     height: 95px;
+     border-radius: 10px;
+}
+
+.header-usuario button {
+margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 17px;
+  padding: 10px;
+  font-weight: bold;
+  background: linear-gradient(90deg,  #0901e6,
+  #c663f1ce);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.header-usuario button:hover {
+     background: linear-gradient(
+  135deg,
+  #0901e6,
+  #c663f1ce
+  );
+  transform: translateY(-2px);
+}
+
+
+@media (min-width: 768px) {
+
+    .header-usuario {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr  1fr;
+        height: 70px;
+    }
+
+    .header-usuario h1 {
+        text-align: left;
+    }
+    
+}

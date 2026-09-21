@@ -1,0 +1,30 @@
+.container-mensajes {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.container-mensajes h1 {
+    padding: 20px 10px;
+    background: black;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .container-mensajes h1 {
+    padding: 20px 10px;
+    background: black;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: left;
+
+
+}
+    
+}

@@ -1,0 +1,185 @@
+.padre-container-mensaje {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mensajeTable-contenido {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #0901e6;
+    gap: 10px;
+    background: black;
+    box-sizing: border-box;
+}
+
+.contenido-rows1 {
+    display: grid;
+    grid-template-columns: 50px 1fr 110px;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+}
+
+.icono-users{
+    padding: 12px;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-users.pendiente {
+    background:  #e8580bde;
+}
+
+.icono-users.leido {
+    background:  #0901e661;
+}
+
+.icono-users.respondido {
+    background:  #22c55e95;
+}
+
+/*estilos del nombre  y correo*/
+
+.rows2 {
+    display: flex;
+    flex-direction: column;
+    color: #f8fafc;
+    gap: 5px ;
+}
+
+.rows2 span:nth-child(1) {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.rows2 span:nth-child(2) {
+    font-size: 15px;
+     color: #94a3b8;
+    
+}
+
+.rows3 {
+    font-size: 15px;
+     color: #94a3b8;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+/*estilos del boton ver y del estado */
+.contenedor-boton-estado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.contenedor-boton-estado button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #0901e6, #c663f1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contenedor-boton-estado button:hover {
+     background: linear-gradient(
+  135deg,
+  #0901e6,
+  #c663f1ce
+  );
+  transform: translateY(-2px);
+}
+
+.select {
+     display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.select.respondido {
+    color: white;
+    background: #22c55e95;
+}
+
+.select.leido {
+    color: white;
+    background: #0901e661;
+}
+
+.select.pendiente {
+    color: white;
+    background: #e8580bcc;
+}
+
+/*estilos contenido oculto*/
+.contendio-oculto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    border-top: 1px solid #0901e6;
+}
+
+.contendio-oculto span:nth-child(1) {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contendio-oculto span:nth-child(2) {
+    color: #94a3b8;
+}
+
+.contendio-oculto button {
+     background: rgba(255, 3, 3, 0.163);
+   border: 1px solid rgb(255, 3, 3);
+   color: rgb(255, 3, 3);
+   padding: 8px;
+   font-size: 16px;
+   font-weight: bold;
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.contendio-oculto button:hover {
+   background: rgb(255, 3, 3);
+   border: 1px solid rgb(255, 3, 3);
+   color: white;
+   transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .padre-container-mensaje{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px , 1fr));
+        gap: 10px;
+      
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,90 @@
+.footer {
+    display: flex;
+    width: 100%;
+    background: rgba(11, 15, 25, 0.85);
+    border-top: 1px solid rgba(255, 255, 255, 0.221);
+    backdrop-filter: blur(12px);
+    margin: auto;
+    min-height: 75px;
+}
+
+.footer-contenedor {
+    display: grid;
+    grid-template-columns: 0.4fr 1.2fr 0.4fr;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.footer-logo {
+    text-align: left;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+.footer-logo span {
+    background: linear-gradient(50deg, #0901e6,
+  #c663f1ce);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.parrafo-dev {
+    background: linear-gradient(135deg, #0901e6, #c663f1ce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.derechos-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 15px;   
+}
+
+.redes-footer {
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    gap: 12px;
+}
+
+.redes-footer a {
+     width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.icon-link {
+    background: #0901e6;
+}
+
+.icon-link svg {
+    color: #f8fafc;
+}
+
+.icon-link:hover {
+  background: #0901e65e;
+  transform: translateY(-2px);
+
+}
+
+.redes-footer a:hover {
+  color: #f8fafc;
+  border-color: #0901e6;
+  transform: translateY(-2px);
+}
