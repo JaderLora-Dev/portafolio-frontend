@@ -9,11 +9,15 @@ function Contacto() {
   const [email, setEmail] = useState("");
   const [asunto, setAsunto] = useState("");
   const [mensaje, setMensaje] = useState("");
+  const [enviando, setEnviando] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (enviando) return;
+
     try {
+      setEnviando(true);
       const respuesta = await registrarMensaje({
         nombre,
         email,
@@ -30,6 +34,8 @@ function Contacto() {
       mostrarError(
         error.response?.data?.mensaje || "Error al enviar el mensaje.",
       );
+    } finally {
+      setEnviando(false);
     }
   };
   return (
@@ -116,8 +122,12 @@ function Contacto() {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="contacto-boton">
-              Enviar mensaje
+            <button
+              type="submit"
+              className="contacto-boton"
+              disabled={enviando}
+            >
+              {enviando ? "Enviando..." : "Enviar mensaje"}
             </button>
           </form>
         </div>

@@ -6,6 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import Mensajes from "./pages/Mensajes.jsx";
 import AdminLayout from "./layouts/AdminLayout.jsx";
 import Usuarios from "./pages/Usuarios.jsx";
+import Proyectos from "./pages/Proyectos.jsx";
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ function App() {
           <Route index element={<Admin />} />
           <Route path="mensajes" element={<Mensajes />} />
           <Route path="usuarios" element={<Usuarios />} />
+          <Route path="proyectos" element={<Proyectos />} />
         </Route>
       </Routes>
     </BrowserRouter>

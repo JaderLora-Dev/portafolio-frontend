@@ -1,0 +1,42 @@
+.proyectoForm-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.protectoForm-interno {
+     display: flex;
+  flex-direction: column;
+
+}
+
+.protectoForm-interno label {
+  margin-top: 15px;
+  font-weight: 600;
+  color: black;
+}
+
+.protectoForm-interno  input, select, textarea{
+   padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #ccc; 
+    font-size: 15px;
+
+}
+
+.form-boton {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #198754;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  margin: 15px auto;
+}
+
+.form-boton:hover {
+  background: #157347;
+}

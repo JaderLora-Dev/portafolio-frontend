@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import SobreMi from "./components/SobreMi";
 import Skills from "./components/Skills";
-import Proyectos from "./components/Proyectos";
+import Proyectos from "./components/ProyectosPublicado.jsx";
 import Contacto from "./components/Contacto";
 import Footer from "./components/Footer";
 

@@ -194,6 +194,16 @@
   transform: translateY(-2px);
 }
 
+.contacto-boton:active {
+  background: #0901e658;
+  transform: translateY(-2px);
+}
+
+.contacto-boton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 
 /* RESPONSIVE*/
 @media (max-width: 900px) {

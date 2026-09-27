@@ -2,7 +2,14 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { MdAdminPanelSettings, MdHome } from "react-icons/md";
-import { LuLogOut, LuMail, LuMenu, LuUser, LuX } from "react-icons/lu";
+import {
+  LuFolderCode,
+  LuLogOut,
+  LuMail,
+  LuMenu,
+  LuUser,
+  LuX,
+} from "react-icons/lu";
 import { cerrarSesion } from "../services/auth.service";
 import "../Estilos/Sidebar.css";
 
@@ -49,6 +56,17 @@ function Sidebar() {
             <MdHome />
             <span className="texto-menu">Inicio</span>
           </NavLink>
+
+          <NavLink
+            to="/admin/proyectos"
+            className={({ isActive }) =>
+              isActive ? "menu-link activo" : "menu-link"
+            }
+          >
+            <LuFolderCode />
+            <span className="texto-menu">Proyectos</span>
+          </NavLink>
+
           <NavLink
             to="/admin/mensajes"
             className={({ isActive }) =>

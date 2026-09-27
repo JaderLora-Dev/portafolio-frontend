@@ -82,23 +82,23 @@ function Usuarios() {
   };
   return (
     <div>
-      {cargando ? (
-        <Spinner />
-      ) : (
-        <div className="container-usuarios">
-          <div className="header-usuario">
-            <h1>Usuarios</h1>
-            <button onClick={nuevoUsuario}>
-              <LuPlus /> Nueva usuario
-            </button>
-          </div>
+      <div className="container-usuarios">
+        <div className="header-usuario">
+          <h1>Usuarios</h1>
+          <button onClick={nuevoUsuario}>
+            <LuPlus /> Nuevo usuario
+          </button>
+        </div>
+        {cargando ? (
+          <Spinner />
+        ) : (
           <UsuariosTable
             usuarios={usuarios}
             btnEditar={editarUsuario}
             btnEliminar={borrarUsuario}
           />
-        </div>
-      )}
+        )}
+      </div>
 
       <Modal
         abierto={mostrarModal}

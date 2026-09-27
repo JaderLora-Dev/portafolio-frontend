@@ -93,19 +93,18 @@ function Mensajes() {
 
   return (
     <section>
-      {cargando ? (
-        <Spinner />
-      ) : (
-        <div className="container-mensajes">
-          <h1>Mensajes</h1>
-
+      <div className="container-mensajes">
+        <h1>Mensajes</h1>
+        {cargando ? (
+          <Spinner />
+        ) : (
           <MensajesTable
             contactos={contactos}
             handleActualizarEstado={handleActualizarEstado}
             hanbleEliminar={hanbleEliminar}
           />
-        </div>
-      )}
+        )}
+      </div>
     </section>
   );
 }
