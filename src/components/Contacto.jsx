@@ -18,6 +18,7 @@ function Contacto() {
 
     try {
       setEnviando(true);
+
       const respuesta = await registrarMensaje({
         nombre,
         email,
@@ -25,11 +26,14 @@ function Contacto() {
         mensaje,
       });
 
-      mostrarExito(respuesta.mensaje);
       setNombre("");
       setEmail("");
       setAsunto("");
       setMensaje("");
+
+      setEnviando(false);
+
+      await mostrarExito(respuesta.mensaje);
     } catch (error) {
       mostrarError(
         error.response?.data?.mensaje || "Error al enviar el mensaje.",
